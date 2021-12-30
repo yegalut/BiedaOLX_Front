@@ -1,16 +1,152 @@
 .App {
   text-align: center;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar h1{
+  box-sizing: border-box;
+  
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  font-size: 55px;
+  margin-top: -5px;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  margin-left: 5%;
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  box-sizing: border-box;
+  background-color: #282c34;
+  color: rgb(221, 221, 221);
+  height: 75px;
+  border-bottom-style: solid;
+  margin-bottom: 40px;
+}
+
+.navbarLinks{
+  box-sizing: border-box;
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 100%;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.loginLink:hover{
+  box-sizing: border-box;
+  line-height: 70px;
+  text-align: center;
+  float: right;
+  width: 10%;
+  height: 100%;
+  font-size: 30px;
+  background-color: #282c3400;
+}
+
+.logo a{
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+}
+
+
+
+.loginLink{
+  box-sizing: border-box;
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  line-height: 70px;
+  text-align: center;
+  float: right;
+  width: 10%;
+  height: 100%;
+  font-size: 30px;
+}
+
+.navbarLinks a{
+  box-sizing: border-box;
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+  line-height: 70px;
+  text-align: center;
+  float: left;
+  margin-right: 5%;
+  height: 100%;
+  font-size: 30px;
+}
+
+
+
+.mainSite{
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 98%;
+}
+
+.sortForm{
+  width: 100%;
+  height: 100%;
+}
+
+.mainForm{
+  margin-top: 10px;
+  float: left;
+  width: 30%;
+  border-radius: 50px;
+  background: #ffffff;
+  border: 1px solid #282c34;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.mainPosts{
+  float: right;
+  width: 60%;
+}
+
+.post:hover{
+  float: right;
+  border-radius: 50px;
+  border-top: 2px solid #282c34;
+  border-bottom: 2px solid #282c34;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  background-image: linear-gradient(to bottom, #282c3415,  rgba(255,0,0,0),  rgba(255,0,0,0),  #282c3415);
+}
+
+.post{
+  float: right;
+  border-radius: 50px;
+  background: #ffffff;
+  border-top: 2px solid #282c34;
+  border-bottom: 2px solid #282c34;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  
 }
 
 .App-header {
@@ -24,15 +160,272 @@
   color: white;
 }
 
+
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error{
+  color: rgb(160, 16, 16);
+}
+
+.formtemp input[type=text], select {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #282c34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formtemp input[type=password], select {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #282c34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formtemp input[type=submit] {
+  width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formtemp input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formtemp p{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.conversationList p:hover{
+  cursor: pointer;
+  background-color: #464b57;
+  color: rgb(221, 221, 221);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.conversationList p{
+  background-color: #282c34;
+  color: rgb(221, 221, 221);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  
+}
+
+.conversationList{
+  margin-top: -40px;
+  
+  overflow-y: auto;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  height: 685px;
+  border: 1px solid black;
+}
+
+.conversation{
+  margin-top: -40px;
+  overflow-y: auto;
+  float: right;
+  box-sizing: border-box;
+  width:  80%;
+  height: 600px;
+}
+
+.conversation .userMessage{
+  padding-left: 50%;
+  padding-right: 10px;
+}
+.conversation .recivedMessage{
+  padding-right: 50%;
+  padding-left: 10px;
+}
+
+.userMessage{
+  word-break: break-all;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+
+
+
+.userMessage h3{
+  padding: 1%;
+  border-radius: 20px;
+  border: 1px solid #282c34;
+  font-weight: normal;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.userMessage p{
+
+  text-align: right;
+  font-size: 12px;
+  margin-top: -20px;
+  padding-top: 0px;
+  padding-right: 1%;
+}
+
+.recivedMessage{
+  word-break: break-all;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+
+}
+
+.recivedMessage h3{
+  padding: 1%;
+  border-radius: 20px;
+  border: 1px solid #282c34;
+  box-sizing: border-box;
+  font-weight: normal;
+  text-decoration: none;
+}
+.recivedMessage p{
+
+  text-align: left;
+  font-size: 12px;
+  margin-top: -20px;
+  padding-top: 0px;
+  padding-left: 1%;
+}
+
+
+
+.sendBox{
+  float: right;
+  width:  80%;
+  height: 85px;
+  box-sizing: border-box;
+}
+
+
+
+.messageTextfield {
+  width: 92%;
+  height: 80px;
+  background-color: rgb(190, 190, 190);
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.sendButton {
+  font-size: 20px;
+  height: 85px;
+  width: 8%;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #282c34;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sendButton:hover {
+  background-color: #464b57;
+}
+.displayPost{
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: left;
+}
+
+.loadMoreButton {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#title {
+  text-align: left;
+}
+
+#price{
+  text-align: left
+}
+
+.randomButton {
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.randomButton {
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.randomButton:hover {
+  background-color: #45a049;
+}
+
+.deleteButton {
+  width: 200px;
+  background-color: #c42121;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.deleteButton:hover {
+  background-color: #a04545;
 }
